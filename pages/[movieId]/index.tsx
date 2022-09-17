@@ -30,7 +30,7 @@ export async function getServerSideProps(context: any) {
     const index = data?.videos?.results.findIndex(
       (element: Element) => element.type === "Trailer"
     );
-    trailer = data?.videos?.results[index]?.key || "532639";
+    trailer = data?.videos?.results[index]?.key;
   }
   return {
     props: {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import Image from "next/image";
 import { Movie } from "../type";
 import Video from "./Video";

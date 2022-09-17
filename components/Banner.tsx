@@ -44,21 +44,21 @@ const Banner = ({
     return d.getFullYear();
   };
   return (
-    <div className="h-[65vh]">
+    <div className="h-[65vh] min-w-[400px]">
       <Image
         src={`https://image.tmdb.org/t/p/original/${
           movie?.backdrop_path || movie?.poster_path
         }`}
         alt={movie?.title}
         layout="fill"
-        className="object-cover bg-center max-w-full h-auto absolute -z-10 top-0 left-0"
+        className="object-cover bg-center absolute -z-10 top-0 left-0"
       />
       <motion.div
         initial="hidden"
         animate="visible"
         exit="exit"
         variants={wrapperVariants}
-        className="absolute left-20 top-40 text-white"
+        className="absolute sm:left-20 left-5 top-40 text-white"
       >
         <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl w-[90vh] leading-3">
           {movie?.title}

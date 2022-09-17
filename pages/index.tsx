@@ -75,8 +75,8 @@ const Home = ({
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="relative">
-        <div className="relative h-screen bg-gradient-to-b">
+      <main>
+        <div className="relative h-screen min-w-[500px] bg-gradient-to-b">
           <Banner
             moviesOriginals={moviesOriginals}
             setCurrentMovie={setCurrentMovie}
@@ -93,7 +93,6 @@ const Home = ({
             ))}
           </motion.div>
         </div>
-        {/* Modal */}
         {isShowModal && (
           <Modal
             currentMovie={currentMovie}
