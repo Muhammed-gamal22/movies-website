@@ -44,7 +44,7 @@ const Banner = ({
     return d.getFullYear();
   };
   return (
-    <div className="h-[65vh] min-w-[400px]">
+    <div className="h-[65vh]">
       <Image
         src={`https://image.tmdb.org/t/p/original/${
           movie?.backdrop_path || movie?.poster_path

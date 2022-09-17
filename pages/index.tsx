@@ -76,7 +76,7 @@ const Home = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="relative h-screen min-w-[700px] bg-gradient-to-b">
+        <div className="relative h-screen min-w-[900px] bg-gradient-to-b">
           <Banner
             moviesOriginals={moviesOriginals}
             setCurrentMovie={setCurrentMovie}
