@@ -39,7 +39,7 @@ const Modal = ({ isShowModal, setIsShowModal, currentMovie }: modalProps) => {
         >
           <XMarkIcon className="h-6 w-6" />
         </div>
-        <div className="relative flex-1  mt-8 rounded-md w-[80vw] md:h-[90vh] h-[50vh] mx-auto">
+        <div className="relative flex-1  mt-8 rounded-md w-screen sm:w-[90vw] h-[90vh] mx-auto">
           <Video trailer={trailer} />
         </div>
       </>
